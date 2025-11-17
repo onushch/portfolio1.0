@@ -268,44 +268,116 @@ body {
 
   filter: drop-shadow(0 0 8px var(--neon-color)) brightness(1);
 }
+/* ========================================================================= */
+/* --- АДАПТАЦІЯ ДЛЯ ЕКРАНІВ (max-width: 900px) - ПЛАНШЕТИ --- */
+/* ========================================================================= */
+
 @media (max-width: 900px) {
-  .bio-section {
-    justify-content: center;
-  }
-  .text-content,
-  .avatar-container {
-    flex: 1 1 100%;
-  }
-  .avatar-container {
-    max-width: 100%;
-  }
-  .header-title {
-    font-size: 2.5em;
-  }
-  .main-btn {
-    padding: 10px 20px;
-  }
+    /* Основний вміст */
+    .portfolio-content {
+        margin: 20px auto;
+        padding: 0 15px; /* Трохи менші відступи */
+    }
+    
+    /* Заголовки */
+    .header-title {
+        font-size: 2.5em; /* Зменшення розміру для планшетів */
+        letter-spacing: 5px;
+    }
+    .subtitle-bar h2 {
+        font-size: 1.4em;
+    }
+
+    /* Компонування секцій: переходимо до вертикального стека */
+    .bio-section {
+        flex-direction: column; /* Змінюємо на вертикальне розміщення */
+        gap: 30px;
+        align-items: center;
+    }
+    
+    /* Аватар */
+    .avatar-container {
+        order: -1; /* Переносимо аватар нагору на мобільних */
+        max-width: 80%;
+    }
+
+    /* Текст */
+    .text-content {
+        min-width: 100%;
+    }
+
+    /* Кнопки */
+    .actions {
+        /* Залишаємо горизонтально, але з меншим простором */
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .main-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    /* Модальні вікна */
+    .modal-content {
+        padding: 20px;
+        max-width: 95%;
+    }
 }
+
+/* ========================================================================= */
+/* --- АДАПТАЦІЯ ДЛЯ ЕКРАНІВ (max-width: 500px) - МОБІЛЬНІ ПРИСТРОЇ --- */
+/* ========================================================================= */
+
 @media (max-width: 500px) {
-  .header-title {
-    font-size: 1.8em;
-    letter-spacing: 4px;
-  }
-  .subtitle-bar h2 {
-    font-size: 1.2em;
-  }
-  .actions {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .tech-icons img,
-  .social-icons img {
-    height: 40px;
-  }
-  .large-modal .modal-content {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
+    /* Заголовки */
+    .header-title {
+        font-size: 1.8em; 
+        letter-spacing: 3px;
+        margin: 20px 0 10px;
+    }
+    .subtitle-bar h2 {
+        font-size: 1.1em;
+    }
+
+    /* Аватар */
+    .avatar-container {
+        max-width: 100%; /* Займає всю ширину */
+        margin: 10px 0;
+    }
+
+    /* Блок з текстом */
+    .text-content p {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    /* Кнопки: Stacked vertically */
+    .actions {
+        flex-direction: column; /* Вертикальне розміщення кнопок */
+        gap: 15px;
+        align-items: stretch;
+    }
+    .main-btn {
+        width: 100%; /* Кнопки займають всю ширину */
+        padding: 12px 0;
+        font-size: 1em;
+    }
+
+    /* Іконки в модальних вікнах */
+    .tech-icons img,
+    .social-icons img {
+        height: 40px;
+        width: 40px; /* Фіксований розмір для стабільності */
+    }
+
+    /* Збільшене модальне вікно (Bio Modal) */
+    .large-modal .modal-content {
+        max-height: 90vh; /* Більше простору */
+        overflow-y: auto;
+    }
+    .modal-content h3 {
+        font-size: 1.5em;
+    }
 }
 
 .projects-btn {
