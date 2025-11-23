@@ -255,12 +255,6 @@ body {
   color: var(--accent-color);
 }
 
-.skill-tag.filled {
-  background: var(--text-primary);
-  color: #fff;
-  border-color: var(--text-primary);
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
