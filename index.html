@@ -1,206 +1,329 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ілля Онущук | Frontend Developer</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Illya Onushchuk | Frontend Developer</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header-title">
-        <span class="first-name">ILLYA</span> ONUSHCHUK
-      </h1>
-      <div class="subtitle-bar">
-        <h2>Frontend developer</h2>
+    <nav class="navbar">
+      <div class="logo">IO</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="contact-btn">Let's Talk</a>
       </div>
-    </header>
+    </nav>
 
-    <main class="portfolio-content">
-      <section class="bio-section">
-        <div class="text-content">
-          <p>
-            Hi! I’m Illia — a passionate Frontend Developer who loves turning
-            ideas into clean, modern and intuitive digital experiences. I focus
-            on building interfaces that feel smooth, responsive and effortless
-            for users, while keeping the codebase structured and maintainable.
-            <br />
-
-            I have hands-on experience with HTML, CSS, and JavaScript, including
-            DOM manipulation, event handling, modular components and responsive
-            layouts. I confidently work with tools such as Bootstrap, Gulp, Git,
-            and GitHub, and I enjoy shaping projects from the ground up — from
-            structuring files and planning UI logic to polishing the final
-            interactions.<br />
-
-            My workflow usually includes writing reusable components, improving
-            performance, implementing accessible design patterns, and carrying
-            out basic testing to ensure stability across devices and browsers.
-            I’m constantly learning, exploring new technologies, and expanding
-            my skill set to deliver projects that are both visually appealing
-            and technically reliable.<br />
-
-            What drives me the most is the ability to create interfaces that not
-            only look great but also feel natural and intuitive — interfaces
-            that users actually enjoy interacting with.<br />
+    <main class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <span class="badge">Frontend Developer</span>
+          <h1>
+            Building <span class="gradient-text">digital experiences</span> that
+            matter.
+          </h1>
+          <p class="subtitle">
+            Hi, I'm Illya. I focus on creating smooth, responsive, and intuitive
+            interfaces with clean code.
           </p>
-          <div class="actions">
-            <button id="skills-btn" class="main-btn">My skills</button>
-            <button id="contact-btn" class="main-btn">Contact info</button>
-            <a href="projects.html"><button class="main-btn">My projects</button></a>
-            
+          <div class="hero-actions">
+            <a href="#projects" class="primary-btn">View My Work</a>
+            <a href="#contact" class="secondary-btn">Contact Me</a>
           </div>
         </div>
-
-        <div class="avatar-container">
-          <img
-            src="./images/avatar.JPG"
-            alt="Аватар Іллі Онущука"
-            class="avatar-img"
-          />
-          <button id="more-me-btn" class="more-me-btn">More about me</button>
+        <div class="hero-image">
+          <div class="img-wrapper">
+            <img src="./images/avatar.JPG" alt="Illya Onushchuk" />
+          </div>
         </div>
       </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="card about-card">
+            <h3>The Story</h3>
+            <p>
+              I’m Illya Onushchuk, a passionate front-end developer with a
+              strong foundation in HTML, CSS, and JavaScript. I love creating
+              interactive and visually engaging web pages, combining modern
+              design trends with efficient, clean code. Experienced with
+              asynchronous programming, event loops, and Fetch API, I build
+              responsive web applications that deliver smooth user experiences.
+              Beyond coding, I bring creativity from 10 years of dance
+              experience, which inspires my attention to design, motion, and
+              user interaction. I’m constantly learning new technologies and
+              tools to push the boundaries of what web interfaces can do.
+            </p>
+          </div>
+          <div class="card stat-card">
+            <h3>Experience</h3>
+            <p class="highlight">GoIT</p>
+            <span>front-end program</span>
+          </div>
+          <div class="card stat-card">
+            <h3>Focus</h3>
+            <p class="highlight">Front-end</p>
+            <span>Landing Page</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="skills-wrapper">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag filled">JavaScript</span>
+          <span class="skill-tag filled">React</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Gulp</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">DOM Manipulation</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <h2>Selected Works</h2>
+          <p>A collection of projects exploring functionality and design.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-content">
+              <h3>To-do List</h3>
+              <p>Clean task management app with local storage integration.</p>
+              <div class="tech-stack-mini"><span>JS</span><span>CSS</span></div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/ti-do-list-hw/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/ti-do-list-hw.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>BinanceMini</h3>
+              <p>Real-time cryptocurrency dashboard fetching live data.</p>
+              <div class="tech-stack-mini">
+                <span>API</span><span>Async/Await</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/Binance-mini-project/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/Binance-mini-project.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>ReactProject</h3>
+              <p>My favorite books | React project.</p>
+              <div class="tech-stack-mini">
+                <span>React</span><span>DOM</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://github.com/onushch/reactHW1.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>ClickerJS</h3>
+              <p>Interactive browser game with upgrade mechanics.</p>
+              <div class="tech-stack-mini">
+                <span>Game Logic</span><span>Event Loop</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/clicker-JS-HW/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/clicker-JS-HW.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Portfolio by me</h3>
+              <p>Interactive browser page with up-to-date 2025 CSS design</p>
+              <div class="tech-stack-mini">
+                <span>Landing</span><span>CSS</span><span>Grid</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://keen-boba-547095.netlify.app/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a target="_blank" class="link-github">Code not available</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Event Loop</h3>
+              <p>
+                IImplemented asynchronous operations using JavaScript’s event
+                loop to handle non-blocking tasks efficiently.
+              </p>
+              <div class="tech-stack-mini">
+                <span>EventLoop</span><span>JS</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/JS-Event-loop-HW/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/JS-Event-loop-HW.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>JS Map Set</h3>
+              <p>Interactive browser game with upgrade mechanics.</p>
+              <div class="tech-stack-mini">
+                <span>MAP+SET</span><span>JS</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/JS-Map-Set-HW/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/JS-Map-Set-HW.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Fetch HTTPRequest</h3>
+              <p>
+                Performed asynchronous data fetching using Fetch API to
+                communicate with HTTP endpoints.
+              </p>
+              <div class="tech-stack-mini">
+                <span>JS</span><span>Fetch</span><span>HTTP Request</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://onushch.github.io/JS-Fetch-XMLHttpRequest-HW/"
+                  target="_blank"
+                  class="link-arrow"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/onushch/JS-Fetch-XMLHttpRequest-HW.git"
+                  target="_blank"
+                  class="link-github"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3 style = "display:flex;justify-content: center;">MORE SOON <span class="threeDots"></span></h3>
+           
+              
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer id="contact" class="footer">
+        <div class="footer-content">
+          <h2>Let's work together.</h2>
+          <p>Open for freelance and full-time opportunities.</p>
+          <a href="mailto:illyhaonushchuk@gmail.com" class="email-link"
+            >CLICK</a
+          >
+
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com/onushch" target="_blank">GitHub</a>
+            <a href="https://t.me/iiilushaaa" target="_blank">Telegram</a>
+            <a
+              href="https://www.instagram.com/0nushch?igsh=MWc4ZG9hcG11amxscg=="
+              target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Illya Onushchuk. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
-
-    <div id="skills-modal" class="modal" style="display: none">
-      <div class="modal-content">
-        <button class="close-btn" data-close-target="skills-modal">✖</button>
-        <h3>My skills</h3>
-        <div class="tech-icons">
-          <img
-            src="./images/icons/HTML5_logo_and_wordmark.svg.png"
-            alt="HTML5"
-            title="HTML5"
-          />
-          <img
-            src="./images/icons/CSS3_logo_and_wordmark.svg.png"
-            alt="CSS3"
-            title="CSS3"
-          />
-          <img
-            src="./images/icons/download-1.png"
-            alt="JavaScript"
-            title="JavaScript"
-          />
-          <img
-            src="./images/icons/React_Logo_SVG.svg.png"
-            alt="React"
-            title="React"
-          />
-          <img src="./images/icons/Git-Icon-1788C.png" alt="Git" title="Git" />
-          <img
-            class="white-git"
-            src="./images/icons/pngimg.com - github_PNG65.png"
-            alt="GitHub"
-            title="GitHub"
-          />
-          <img
-            src="./images/icons/Galp_Logo_2024.svg.png"
-            alt="Gulp"
-            title="Gulp"
-          />
-          <img
-            src="./images/icons/bootstrap-original-wordmark.png"
-            alt="Bootstrap"
-            title="Bootstrap"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="contact-modal" class="modal" style="display: none">
-      <div class="modal-content">
-        <button class="close-btn" data-close-target="contact-modal">✖</button>
-        <h3>Contact me</h3>
-        <div class="social-icons">
-          <a href="https://instagram.com" target="_blank">
-            <img
-              src="./images/icons/Instagram_icon.png"
-              alt="Instagram"
-              title="Instagram"
-            />
-          </a>
-
-          <a href="https://t.me/yourusername" target="_blank">
-            <img
-              src="./images/icons/Telegram_logo.svg.webp"
-              alt="Telegram"
-              title="Telegram"
-            />
-          </a>
-
-          <a href="https://twitter.com" target="_blank">
-            <img
-              src="./images/icons/X_icon.svg.png"
-              alt="X (Twitter)"
-              title="X (Twitter)"
-            />
-          </a>
-
-          <a href="mailto:ваш.email@gmail.com" target="_blank">
-            <img
-              src="./images/icons/Gmail_icon_(2020).svg.png"
-              alt="Gmail"
-              title="Gmail"
-            />
-          </a>
-
-          <a href="https://linkedin.com" target="_blank">
-            <img
-              src="./images/icons/pngimg.com - linkedIn_PNG27.png"
-              alt="LinkedIn"
-              title="LinkedIn"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="bio-modal" class="modal large-modal" style="display: none">
-      <div class="modal-content">
-        <button class="close-btn" data-close-target="bio-modal">✖</button>
-        <h3>My bio</h3>
-        <p>
-          My name is Illya Onushchuk, a 21-year-old Frontend Developer
-          originally from Ukraine and currently living in Spain. My journey into
-          tech began long before I wrote my first line of code — it started with
-          discipline, creativity, and a decade of professional dance training.
-          That experience shaped my sense of aesthetics, structure, and
-          precision, all of which naturally transitioned into my work as a
-          developer. <br /><br />
-
-          Today, I focus on building clean, modern, and user-friendly interfaces
-          using HTML, CSS, JavaScript, and tools like Bootstrap, Gulp, Git, and
-          GitHub. I’m confident working with DOM interactions, responsive
-          layouts, modular components and UI behavior based on real user
-          experience. I approach every project with the same mindset: clarity,
-          functionality, and a touch of creativity.<br /><br />
-
-          I’m currently completing a 7-month Frontend Development program at
-          GoIT Academy, where I continue to deepen my understanding of
-          JavaScript, React, and related technologies. Beyond coursework, I
-          develop personal projects — including a landing page for a dance
-          studio and the concept of NFTGO, a mobile geolocation game combining
-          NFTs, gamification and real-world exploration.<br /><br />
-
-          Living in Spain has expanded my world both personally and
-          professionally. I communicate confidently in English, and I’m actively
-          learning Spanish, which helps me integrate into the culture and
-          broaden my opportunities in the European tech environment.<br /><br />
-
-          I’m an entrepreneur as well, managing my own business since a young
-          age. This gives me a strong sense of responsibility, independence, and
-          the ability to work consistently toward long-term goals.<br /><br />
-
-          What motivates me most is growth — learning new tools, improving my
-          craft, and building products that feel natural, intuitive, and
-          enjoyable to use. I treat every project as a chance to turn an idea
-          into something real, something people can interact with.<br /><br />
-        </p>
-      </div>
-    </div>
 
     <script src="./main.js"></script>
   </body>
